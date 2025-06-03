@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>www.SamStore.com</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <header id="idheader">
+    <img id="logotipo" src="imagenes/logotipo.png.png" alt="Logotipo de SamSport">
+    <nav class="menu">
+     <a href="main.html"> <button  id="boton1">Hogar</button> </a>
+      <button id="boton2">Sobre Nosotros</button>
+      <button id="boton3">Contactanos</button>
+    </nav>
+    <button id="carrito">🛒</button>
+  </header>
+
+  <div class="container">
+    <div class="products">
+      <div class="card">
+        <span class="badge">Oferta</span>
+        <img
+          src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/ONSITE_LAM_IWP_PLPS_FOOTBALL_IWP_DT_01_ba72265cf3.jpg"
+          alt="Camisetas">
+        <div class="card-body">
+          <center>
+            <div class="card-title">CAMISAS</div>
+            <a href="MAN-CAMISAS.html" class="btn">Hombre</a>
+            <a href="#" class="btn" onclick="agregarAlCarrito('Camisa WOMAN')">Mujer</a>
+          </center>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge">Nuevo</span>
+        <img src="imagenes/pantalonetas.jpeg" alt="Pantalonetas">
+        <div class="card-body">
+          <center>
+            <div class="card-title">PANTALONETAS</div>
+            <a href="#" class="btn" onclick="agregarAlCarrito('Pantaloneta MAN')">Hombre</a>
+            <a href="#" class="btn" onclick="agregarAlCarrito('Pantaloneta WOMAN')">Mujer</a>
+          </center>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="imagenes/medias.jpeg" alt="Medias">
+        <div class="card-body">
+          <center>
+            <div class="card-title">MEDIAS Y TOBILLERAS</div>
+            <a href="#" class="btn" onclick="agregarAlCarrito('Medias MAN')">Hombre</a>
+            <a href="#" class="btn" onclick="agregarAlCarrito('Medias WOMAN')">Mujer</a>
+          </center>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge">Oferta</span>
+        <img src="imagenes/zapatillas.jpeg" alt="Zapatillas">
+        <div class="card-body">
+          <center>
+            <div class="card-title">ZAPATILLAS</div>
+            <a href="#" class="btn" onclick="agregarAlCarrito('Zapatillas MAN')">Hombre</a>
+            <a href="#" class="btn" onclick="agregarAlCarrito('Zapatillas WOMAN')">Mujer</a>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <a href="#">1</a>
+      <a href="second.html">2</a>
+    </div>
+  </div>
+
+  <!-- Carrito lateral -->
+  <div id="carrito-lateral">
+    <button id="cerrar-carrito" title="Cerrar carrito">❌</button>
+    <h2>Carrito de compras</h2>
+    <div id="carrito-contenido"></div>
+    <button id="btn-pagar">Pagar carrito</button>
+  </div>
+
+  <footer>
+    &copy; 2025 SamSport los derechos reservados
+  </footer>
+
+  <script src="acciones.js"></script>
+</body>
+
+</html>
